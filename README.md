@@ -9,9 +9,10 @@
 | Project | Περιγραφή | Θεματικές |
 |---|---|---|
 | [`assignment-1-hashing-2fa`](./assignment-1-hashing-2fa) | Υπολογισμός hash, ακεραιότητα αρχείων, εντροπία Shannon, 2FA (OTP), salt | hashing, integrity, entropy, 2FA |
+| [`assignment-2-secure-storage`](./assignment-2-secure-storage) | Ασφαλές σύστημα αποθήκευσης αρχείων: PBKDF2, OTP εγγραφή, RSA, AES-256-GCM, ψηφιακή υπογραφή, anti-replay | password hashing, RSA, AES-GCM, digital signatures, anti-replay |
 | _...θα προστεθούν κι άλλα_ | | |
 
-> Κάθε φάκελος project περιέχει το δικό του `README.md` / `REPORT.md` με
+> Κάθε φάκελος project περιέχει το δικό του `README.md` / αναφορά με
 > αναλυτικές οδηγίες εγκατάστασης, εκτέλεσης και ανάλυση αποτελεσμάτων.
 
 ## Θεματικές Ενότητες
@@ -26,19 +27,25 @@
 ## Τεχνολογίες
 
 Το μεγαλύτερο μέρος του κώδικα είναι σε **Python 3**. Κάθε project έχει το δικό
-του `requirements.txt` (όπου χρειάζεται) και οδηγίες εγκατάστασης στο αντίστοιχο
-README του.
+του `requirements.txt` και οδηγίες εγκατάστασης στο αντίστοιχο README του.
 
 ## Δομή Repository
 
 ```
 .
-├── README.md                     <- αυτό το αρχείο
-├── assignment-1-hashing-2fa/     <- 1η εργασία: Ασφάλεια Συστημάτων
+├── README.md                          <- αυτό το αρχείο
+├── assignment-1-hashing-2fa/          <- 1η εργασία: Hash, Εντροπία, 2FA, Salt
 │   ├── main.py
-│   ├── ...
+│   ├── hashing_utils.py
+│   ├── entropy_utils.py
+│   ├── auth_2fa.py
+│   ├── requirements.txt
 │   └── REPORT.md
-├── assignment-2-.../             <- επόμενη εργασία (σύντομα)
+├── assignment-2-secure-storage/       <- 2η εργασία: Secure File Storage
+│   ├── secure_storage.py
+│   ├── requirements.txt
+│   ├── report.pdf
+│   └── build_report.py
 └── ...
 ```
 
