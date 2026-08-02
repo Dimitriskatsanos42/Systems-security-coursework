@@ -1,0 +1,5 @@
+username,shell,groups
+devuser1,/bin/bash,developers
+devuser2,/bin/bash,developers,docker
+qauser1,/bin/bash,qa
+readonlyuser,/bin/rbash,
