@@ -1,0 +1,46 @@
+site_name: Systems Security Coursework
+site_description: Υλικό, σημειώσεις και projects πάνω στην Ασφάλεια Συστημάτων και την Κυβερνοασφάλεια
+site_url: https://dimitriskatsanos42.github.io/Systems-security-coursework/
+repo_url: https://github.com/Dimitriskatsanos42/Systems-security-coursework
+repo_name: Dimitriskatsanos42/Systems-security-coursework
+
+theme:
+  name: material
+  language: el
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Σκοτεινό θέμα
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Φωτεινό θέμα
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.instant
+    - content.code.copy
+    - search.suggest
+
+nav:
+  - Αρχική: index.md
+  - Roadmap: roadmap.md
+  - Projects:
+      - Linux User Management: linux-user-management.md
+      - "Assignment 1: Hashing & 2FA": assignment-1.md
+      - "Assignment 2: Secure Storage": assignment-2.md
+      - Password Strength Checker: password-strength-checker.md
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - tables
